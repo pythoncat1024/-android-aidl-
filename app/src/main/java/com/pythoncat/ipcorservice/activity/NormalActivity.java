@@ -35,13 +35,13 @@ public class NormalActivity extends AppCompatActivity {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Normal activity");
-        final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        final Drawable upArrow = getResources().getDrawable(android.R.drawable.ic_menu_revert);
         upArrow.setColorFilter(getResources().getColor(R.color.colorWhite), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
         TextView tvShowResult = (TextView) findViewById(R.id.normal_show_tv);
         TextView tvStudent = (TextView) findViewById(R.id.normal_show_stu_tv);
         tvStudent.setText(getString(R.string.tip_student, ""));
-        tvShowResult.setText(getString(R.string.show_about_normal_service, ""));
+        tvShowResult.setText(getString(R.string.show_about_normal_service, -1));
         Button btnExecute = (Button) findViewById(R.id.normal_ui_btn);
         btnExecute.setOnClickListener(v -> {
             LogUtils.w("execute normal service method...");
