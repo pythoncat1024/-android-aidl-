@@ -1,8 +1,8 @@
 package com.pythoncat.ipcorservice.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.apkfuns.logutils.LogUtils;
 import com.pythoncat.ipcorservice.R;
